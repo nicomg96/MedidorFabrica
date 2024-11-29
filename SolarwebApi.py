@@ -5,7 +5,7 @@ import time
 
 # Configuración de las IPs de los inversores y límites de potencia
 systems = {
-    "NOVACAP": {"ip": " https://api1.loca.lt", "max_power": 150},  # Límite: 150 kW
+    "NOVACAP": {"ip": "https://api1.loca.lt", "max_power": 150},  # Límite: 150 kW
     "ALTIERI": {"ip": "https://api2.loca.lt", "max_power": 220}   # Límite: 220 kW
 }
 
@@ -20,8 +20,8 @@ update_interval = 5
 
 # Función para obtener datos de un sistema
 def get_system_data(system_name, ip):
-    powerflow_endpoint = f"http://{ip}/solar_api/v1/GetPowerFlowRealtimeData.fcgi"
-    meter_endpoint = f"http://{ip}/solar_api/v1/GetMeterRealtimeData.cgi"
+    powerflow_endpoint = f"{ip}/solar_api/v1/GetPowerFlowRealtimeData.fcgi"
+    meter_endpoint = f"{ip}/solar_api/v1/GetMeterRealtimeData.cgi"
 
     try:
         # Obtener datos de flujo de potencia
@@ -65,7 +65,6 @@ def get_system_data(system_name, ip):
     except KeyError as e:
         st.warning(f"Error al procesar los datos de {system_name}: {e}")
         return None
-
 
 # Título del Dashboard
 st.title("Dashboard de Potencia en Tiempo Real - Fronius")
