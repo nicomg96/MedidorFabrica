@@ -5,8 +5,8 @@ import time
 
 # Configuración de las IPs de los inversores y límites de potencia
 systems = {
-    "NOVACAP": {"ip": "192.168.1.180", "max_power": 150},  # Límite: 150 kW
-    "ALTIERI": {"ip": "192.168.1.181", "max_power": 220}   # Límite: 220 kW
+    "NOVACAP": {"ip": " https://api1.loca.lt", "max_power": 150},  # Límite: 150 kW
+    "ALTIERI": {"ip": "https://api2.loca.lt", "max_power": 220}   # Límite: 220 kW
 }
 
 # Inicialización de datos históricos
