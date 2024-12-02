@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Configuración de las URLs de las APIs
 systems = {
-    "NOVACAP": {"ip": "https://df8b-190-15-217-99.ngrok-free.app", "max_power": 150},
-    "ALTIERI": {"ip": "https://c425-190-15-217-99.ngrok-free.app", "max_power": 220}
+    "NOVACAP": {"ip": "https://50af-190-15-217-99.ngrok-free.app", "max_power": 150},
+    "ALTIERI": {"ip": "https://7d1f-190-15-217-99.ngrok-free.app", "max_power": 220}
 }
 
 # Inicialización de datos históricos
